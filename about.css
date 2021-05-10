@@ -198,22 +198,14 @@ p,li{
     padding: 40px 15%;
   }
   .sec .container {
-    display: flex;
-    flex-direction:column
+    display: block;
+    flex-direction: row;
   }
   .sec .box-6{
-    width:100%;
+    width:50%;
   }
-  .sec .box-6.odd{
-    order:1;
-    -webkit-order: 1;
-  }
-  .sec .box-6.even{
-    order:2;
-    -webkit-order: 2;
-  }
-  .sec .full-text { display: inline-block; }
-  .sec .short-text { display: none; }
+  .sec .short-text { display: inline-block; }
+  .sec .full-text { display: none; }
 }
 
 @media(min-width: 882px){
