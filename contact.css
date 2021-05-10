@@ -170,6 +170,7 @@ form{
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
   background-color: #F8F8F8;
   color: #0bb2bb;
   padding: 10px 30px;
@@ -218,3 +219,62 @@ form{
   color: #FF0000;
 }
 /* End footer*/
+
+/* Responsive */
+@media(max-width: 575px){
+  .nav .container{
+    margin: 0 ;
+  }
+  .nav span{
+    padding: 20px 12px;
+  }
+  .cover .container{
+    height: auto;
+  }
+  .sec1 .container{
+    padding: 40px 15%;
+  }
+  .sec .box-6{
+    width:100%;
+  }
+  .sec .content{
+    padding:25px 10px;
+  }
+}
+
+@media(min-width: 576px){
+  .nav .container{
+    margin: 0 5%;
+  }
+  .cover .container{
+    height: auto;
+  }
+  .sec1 .container{
+    padding: 40px 15%;
+  }
+  .sec .box-6{
+    width:100%;
+  }
+  .sec .content{
+    padding:25px 10px;
+  }
+}
+@media(min-width: 882px){
+
+  .sec .box-6{
+    width:50%;
+  }
+  .sec .content{
+    padding:50px 10px;
+  }
+}
+
+@media(min-width: 992px){
+  .sec .content{
+    padding:50px;
+  }
+
+}
+
+
+/* Responsive */
