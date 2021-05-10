@@ -304,3 +304,118 @@ p,li{
   transition: 0.4s;
 }
 /* End footer*/
+
+/* Responsive */
+@media(max-width: 575px){
+  .nav .container{
+    margin: 0 ;
+  }
+  .nav span{
+    padding: 20px 12px;
+  }
+  .cover .container{
+    height: auto;
+  }
+  .sec1 .container{
+    padding: 40px 15%;
+  }
+  .ser .ser-p{
+    padding: 0 5%;
+  }
+  .ser .row .box-3, .stan .row .box-4{
+    width:84%;
+    margin: 10px 8%;
+  }
+  .ser .row .box-3:hover, .stan .row .box-4:hover{
+    margin: 1px 8%;
+  }
+  .work-page .box-6{
+    width:100%;
+  }
+  .clients .container .row .box-5{
+    width: 100%;
+    padding: 0 100px;
+  }
+
+}
+
+@media(min-width: 576px){
+  .nav .container{
+    margin: 0 5%;
+  }
+  .cover .container{
+    height: auto;
+  }
+  .sec1 .container{
+    padding: 40px 15%;
+  }
+  .ser .ser-p{
+    padding: 0 5%;
+  }
+  .ser .row .box-3{
+    width:42%;
+    margin: 10px 4%;
+  }
+  .ser .row .box-3:hover{
+    margin: 1px 4%;
+  }
+  .work-page .box-6{
+    width:50%;
+  }
+  .centered h3{
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .centered p{
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .stan .row .box-4{
+    width:84%;
+    margin: 10px 8%;
+  }
+  .stan .row .box-4:hover{
+    margin: 1px 8%;
+  }
+
+}
+
+@media(min-width: 882px){
+  .cover .container{
+    height: 100vh;
+  }
+  .sec1 .container{
+    padding: 40px 20%;
+  }
+  .ser .row .box-3{
+    width:21%;
+    margin: 10px 2%;
+  }
+  .ser .row .box-3:hover{
+    margin: 1px 2%;
+  }
+  .stan .row .box-4{
+    width:27.33%;
+    margin: 10px 3%;
+  }
+  .stan .row .box-4:hover{
+    margin: 1px 3%;
+  }
+}
+
+@media(min-width: 992px){
+
+  .sec1 .container{
+    padding: 40px 25%;
+  }
+  .centered h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .centered p{
+    font-size: 16px;
+  }
+
+}
+
+/* Responsive */
