@@ -1,0 +1,408 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+
+*{box-sizing:border-box}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  margin:0;
+  padding:0;
+  font-family: Roboto,sans-serif;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+p{
+  color:gray;
+}
+
+/* Start Navbar*/
+nav {
+  position:fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  height:100px;
+  padding: 10px 50px 10px 30px;
+  transition: .5s;
+  z-index: 99;
+}
+nav.black{
+  color: gray;
+  background: rgba(255, 255, 255, 0.9);
+  height: 80px;
+  padding: 10px 50px 10px 30px;
+}
+nav .left {
+  float: left;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul{
+  margin:0;
+  padding-right: 30px;
+}
+
+/*Pristina - Monotype Corsiva - Script MT ("Tangerine", serif)*/
+nav .right {
+  float: right;
+  display: flex;
+}
+nav ul{
+  margin:0;
+}
+nav .right li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  list-style-type: none;
+  font-size: 1em;
+}
+nav .right a{
+  color:#fff;
+  text-decoration: none;
+  padding: 1em;
+}
+nav .right li a:hover{
+  color:#00696E;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 5px;
+}
+
+nav .right li a{
+  line-height: 80px;
+  transition: .5s;
+}
+nav.black ul{
+
+}
+nav.black .right li a{
+  color:gray;
+  line-height: 60px;
+  transition: .5s;
+}
+
+nav.black .right li a:hover{
+  color:#00696E;
+
+}
+
+/* End Navbar*/
+
+/* Start Cover*/
+.cover img{
+  width:100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.9;
+}
+.cover .img-overlay{
+  background: linear-gradient(to right,rgba(0, 48, 51,.5),rgba(0, 105, 110,.3));
+  z-index: 5;
+}
+.jumbotron{
+           position:relative;
+           width:100%;
+           height:100vh;
+           overflow:hidden;
+}
+
+.cover .welcome h1{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top:30%;
+  text-align: center;
+  font-size: 60px;
+  color:white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.cover .welcome p{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top:83%;
+  font-size: 16px;
+  color:white;
+  font-weight: 500;
+}
+.cover .welcome p:nth-child(2){
+  top:50%;
+  font-size: 20px;
+}
+.cover .welcome .fas{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top:90%;
+  font-size: 15px;
+  color:white;
+
+}
+/* End Cover*/
+
+.container{
+  margin: 0 15%;
+  padding: 0% 0;
+}
+.row{
+  clear: both;
+}
+.row::after{
+  content: "";
+  clear:both;
+  display: table;
+}
+.vision-mision .box-6{
+  width:40%;
+  margin: 10px 5%;
+  padding: 10px 20px;
+  float:left;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.counter{
+  background-image: url('background.png');
+  background-size: cover;
+  color:#00181a;
+  padding: 60px 0;
+}
+.counter i{
+  font-size: 40px;
+}
+.counter .row .box-4{
+  width: 27.33%;
+  margin: 0 3%;
+  padding: 30px 20px 10px;
+  float: left;
+}
+.stan .row .box-4{
+  width:27.33%;
+  margin: 0 3%;
+  padding: 10px 20px;
+  float:left;
+  border: 1px solid #32BFC6;
+  border-radius: 10px;
+}
+
+.about .info{
+  padding: 60px 0%;
+}
+.about .info p{
+  text-align: justify;
+  color: gray;
+  text-indent:40px;
+}
+.about .info h1{
+  text-transform: capitalize;
+}
+ h1::after,.contact h2::after{
+    content: '';
+    width: 4%;
+    height: 2px;
+    margin: 12px 0 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about h1::after,.clients h1::after,.projects h1::after{
+  background: black;
+}
+.stan h1::after,.contact .container h1::after{
+  background: white;
+}
+.contact h2::after{
+  background: white;
+  width:10%;
+}
+.about .more-about{
+  width: 100%;
+  background-size: cover;
+}
+.projects{
+  background-color: #f7f7f7;
+  padding: 60px 0;
+  position: relative;
+}
+.projects .slide-left, .projects .slide-right{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+}
+.projects .slide-left{
+  left:30px
+}
+.projects .slide-right{
+  right:30px;
+}
+.projects .box-3{
+  width:25%;
+  float:left;
+  padding: 10px;
+}
+.projects .row .item{
+  display: none;
+  position: relative;
+  width: 100%;
+}
+.projects .row .item .caption{
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  bottom: 0px;
+  left:0px;
+  background-color: rgba(0,0,0,.5);
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+.projects .row .item.active{
+  display: block;
+}
+.projects .box-3 img{
+  max-width: 100%;
+  display: block;
+  background-size: cover;
+}
+
+.projects .item img:hover{
+  transition: all .6s;
+  opacity: 0.8;
+  z-index: -1;
+  transform: scale(1.03);
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.projects .container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.projects .mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.projects .cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.projects .prev,
+.projects .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.projects .prev:hover,
+.projects .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.stan{
+  background-color: #00696E;
+  color: white;
+  padding: 60px 0 50px;
+}
+.stan p,.contact p{
+  color: white;
+}
+.stan .row-three{
+  padding-top: 30px;
+}
+
+.clients{
+  padding: 60px 0;
+}
+.clients .container .row .box-5{
+  width:20%;
+  padding: 10px;
+  float: left;
+  display:inline-block;
+}
+.clients .box-5 img{
+  width: 100%;
+  background-size: cover;
+}
+
+
+.contact{
+  color:#fff; /*  #F1F2F7*/
+
+  background-color: #222222; /* #00494d */
+  padding-top:60px;
+}
+.contact .green{
+  color: #007980;
+}
+.contact .box-6{
+  width:50%;
+  float:left;
+  padding: 20px;
+}
+.contact .box-3{
+  width:25%;
+  float:left;
+  padding: 45px 40px;
+  text-align: center;
+}
+.contact .media{
+  margin-top: 50px;
+}
+.contact .media i{
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #00696E;
+  border-radius: 5px;
+  background-color: #00696E;
+  color:#fff;
+}
+
+.contact .media i:hover{
+  background-color: #003033;
+  border: 1px solid #003033;
+}
+.contact p{
+  color: #BBBBBB; /* #BFECF3 */
+}
+.footer{
+  color:white;
+  background-color: #1D1D1D;  /* #003033 */
+}
+.footer p{
+  margin: 0;
+  padding: 10px;
+  font-size: 13px;
+}
+iframe {
+  margin: 0;
+  padding: 0;
+}

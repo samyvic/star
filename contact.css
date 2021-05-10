@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: "open sans", HelveticaNeue, "Helvetica Neue", Helvetica-Neue, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5{
+  font-family: "playfair display", HelveticaNeue, "Helvetica Neue", Helvetica-Neue, Helvetica, Arial, sans-serif;
+}
+p,li{
+  font-size: 15px;
+  line-height: 1.7;
+}
+/* Start Navbar*/
+.nav{
+  position: fixed;
+  width:100%;
+  background-color: white;
+}
+.nav .container{
+  margin: 0 20%;
+}
+.nav span{
+  padding: 20px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 48px;
+}
+.nav span:hover{
+  border-bottom: 3px solid #0bb2bb;
+}
+.nav span:hover a{
+  color:#0bb2bb;
+}
+.nav a{
+  color:gray;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.nav .active{
+  border-bottom: 3px solid #0bb2bb;
+}
+.nav .active a{
+  color:#0bb2bb;
+}
+/* End Navbar*/
+
+
+/* Start Cover*/
+.cover{
+
+}
+.cover .container{
+
+}
+.cover img{
+  width: 100%;
+  background-size: cover;
+}
+/* End Cover*/
+
+/* Start section1*/
+.sec1{
+  color: #002324;
+}
+.sec1 .container{
+  padding: 40px 25% 55px;
+}
+
+.sec1 h1{
+  font-size:36px;
+}
+.sec1 p{
+  font-size: 15px;
+  line-height: 1.7;
+}
+/* End section1*/
+
+
+/* Start sec*/
+
+.sec .container{
+  background-color: #F8F8F8;
+  text-align: left;
+  padding: 10px 10% 120px;
+}
+.sec .container::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.sec .box-6{
+  width:50%;
+  float: left;
+}
+.sec .content{
+  padding: 50px;
+}
+.sec p, .sec li{
+  font-size: 15px;
+  line-height: 1.7;
+}
+/* End sec*/
+/* Start message */
+.sec2 .container::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.sec2 .message{
+  width:100%;
+  height:400px;
+  float: left;
+  border-right: 1px solid #F6F6F6;
+}
+
+.reach{
+  width:50%;
+  float:right;
+  height:400px;
+}
+.box{
+  width:50%;
+  height:100px;
+  float:left;
+}
+
+.msg{
+  font-size: 1em;
+  display:block;
+  margin: 10px 5%;
+}
+.mess-name::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.lhs,.rhs {
+  width:48%;
+  float:left;
+}
+.rhs{
+  margin-left:4%;
+}
+input[type=text],input[type=email],input[type=phone], textarea{
+  width:100%;
+  border: 4px solid #fff;
+  padding: 12px 20px;
+  margin: 8px 0;
+  color: #999999;
+  font-size: 15px;
+  outline: none;
+}
+
+.message-box-area{
+  padding-top:10px;
+}
+form{
+  text-align: center;
+}
+.message .button {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F8F8F8;
+  color: #0bb2bb;
+  padding: 10px 30px;
+  border: 3px solid #0bb2bb;
+  border-radius: 3px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.message .button:hover{
+  color: #FFF;
+  background-color: #0bb2bb;
+  transition: all 0.4s ease-in-out;
+}
+/* End message */
+/* Start footer*/
+.footer{
+  background-color: #09a2aa;
+  color: #fff;
+}
+.footer .container{
+  padding: 40px 15% 10px;
+}
+.footer h4{
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.footer p{
+  margin: 0 0 10px;
+}
+.footer a{
+  font-size: 32px;
+  padding: 10px;
+  color: white;
+}
+.footer hr{
+  margin: 30px 0 20px;
+}
+.footer .face:hover{
+  color:#036CE4;
+}
+.footer .whats:hover{
+  color: #01E675;
+}
+.footer .utube:hover{
+  color: #FF0000;
+}
+/* End footer*/
