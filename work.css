@@ -309,7 +309,7 @@ p,li{
 
 @media(max-width: 575px){
   .nav .container{
-    margin: 0 5%;
+    margin: 0;
   }
   .cover .container{
     height: auto;
