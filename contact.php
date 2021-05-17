@@ -11,8 +11,8 @@
 
     //Creating array of errors
     $formErrors = array();
-    if(strlen($phone) > 5){
-      $formErrors[] = 'Phone number can not be more than 5 numbers';
+    if(strlen($phone) > 11){
+      $formErrors[] = 'Phone number can not be more than 11 numbers';
     }
 
     //If no errors send the email [ mail(to, subject, Message, headers, parameters)]
@@ -20,13 +20,15 @@
     $myEmail = 'ahmedov.samyvic@gmail.com';
     $subject = 'Contact Form';
     if (empty ($formErrors)){
-      mail($myEmail, $subject , $msg, $headers);
+      mail($myEmail, $subject , $msg, $headers,$fname,$lname,$phone);
       $fuser ='';
       $luser ='';
       $mail ='';
       $phone ='';
       $msg ='';
       $success =" <div class=''>We Have Recieved Your Message!</div>";
+
+
     }
 
   }
@@ -126,9 +128,7 @@
                 <textarea id="usermsg" name="message" rows="8" cols="70" onfocus="if(this.value == 'Write your message here') this.value='';" onblur="if(this.value == '') this.value='Write your message here';" >Write your message here</textarea>
               </div>
 
-            <!--  <a href="#"><span class="button">SEND</span></a> -->
-
-            <input class="button" type="submit" value="SEND">
+            <input class="button" type="submit" value="SEND" name="SEND">
           </form>
           </div>
         </div>
